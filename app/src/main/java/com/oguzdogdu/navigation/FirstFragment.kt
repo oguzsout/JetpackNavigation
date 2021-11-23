@@ -9,6 +9,7 @@ import com.oguzdogdu.navigation.model.User
 
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
+
     private lateinit var binding: FragmentFirstBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
