@@ -20,11 +20,8 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentSecondBinding.bind(view)
 
-        binding.textView.text = "First Name: ${args.userData.firstName} \n Last Name: ${args.userData.lastName}"
+        binding.tvSecondname.text = "Name: ${args.userData.firstName}"
+        binding.tvSecondlast.text = "Lastname: ${args.userData.lastName}"
 
-    }
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }
