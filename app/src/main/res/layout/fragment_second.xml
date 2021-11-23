@@ -7,16 +7,27 @@
     tools:context=".SecondFragment">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="370dp"
-        android:layout_height="80dp"
+        android:id="@+id/tv_secondname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/first_name"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_secondlast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/last_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_secondname" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,34 +10,17 @@ import androidx.navigation.fragment.navArgs
 import com.oguzdogdu.navigation.databinding.FragmentSecondBinding
 
 
-class SecondFragment : Fragment() {
+class SecondFragment : Fragment(R.layout.fragment_second) {
+
+    private lateinit var binding: FragmentSecondBinding
 
     private val args by navArgs<SecondFragmentArgs>()
 
-    private var _binding: FragmentSecondBinding? = null
-
-    // This property is only valid between onCreateView and
-// onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding = FragmentSecondBinding.bind(view)
 
-        binding.textView.text = "First Name: ${args.currentUser.firstName} \n Last Name: ${args.currentUser.lastName}"
+        binding.textView.text = "First Name: ${args.userData.firstName} \n Last Name: ${args.userData.lastName}"
 
     }
     override fun onDestroyView() {
