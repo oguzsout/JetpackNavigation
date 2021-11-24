@@ -12,17 +12,18 @@
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
             app:destination="@id/secondFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.oguzdogdu.navigation.SecondFragment"
         android:label="Second"
         tools:layout="@layout/fragment_second" >
+        <argument
+        android:name="users"
+        app:argType="com.oguzdogdu.navigation.model.User" />
         <action
             android:id="@+id/action_secondFragment_to_firstFragment"
             app:destination="@id/firstFragment" />
-        <argument
-            android:name="userData"
-            app:argType="com.oguzdogdu.navigation.model.User" />
     </fragment>
 </navigation>

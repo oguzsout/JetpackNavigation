@@ -20,12 +20,20 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
     }
 
     private fun sendData() {
+
         binding.btnSend.setOnClickListener {
-            val firstName = binding.txtFirstname.text.toString()
-            val lastName = binding.txtLastname.text.toString()
-            val user = User(firstName, lastName)
-            val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(user)
-            findNavController().navigate(action)
+            /*  val firstName = binding.txtFirstname.text.toString()
+                val lastName = binding.txtLastname.text.toString()
+                val user = User(fiName, lastName)
+                val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(user)
+                findNavController().navigate(action)*/
+            val bundle = Bundle()
+            bundle.putParcelable(
+                "users",
+                User(binding.txtFirstname.text.toString(), binding.txtLastname.text.toString())
+            )
+
+            findNavController().navigate(R.id.action_firstFragment_to_secondFragment, bundle)
         }
     }
 }
