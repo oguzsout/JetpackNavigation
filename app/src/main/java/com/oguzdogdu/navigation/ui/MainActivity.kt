@@ -1,9 +1,10 @@
-package com.oguzdogdu.navigation
+package com.oguzdogdu.navigation.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.oguzdogdu.navigation.R
 import com.oguzdogdu.navigation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

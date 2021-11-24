@@ -1,4 +1,4 @@
-package com.oguzdogdu.navigation
+package com.oguzdogdu.navigation.ui.secondfragment
 
 import android.os.Bundle
 import android.view.View
@@ -6,6 +6,7 @@ import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.oguzdogdu.navigation.R
 import com.oguzdogdu.navigation.databinding.FragmentSecondBinding
 
 
@@ -21,7 +22,6 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 
         dataSet()
         backStack()
-
     }
 
     private fun dataSet() {

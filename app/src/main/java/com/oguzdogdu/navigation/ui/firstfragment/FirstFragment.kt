@@ -1,9 +1,10 @@
-package com.oguzdogdu.navigation
+package com.oguzdogdu.navigation.ui.firstfragment
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.oguzdogdu.navigation.R
 import com.oguzdogdu.navigation.databinding.FragmentFirstBinding
 import com.oguzdogdu.navigation.model.User
 

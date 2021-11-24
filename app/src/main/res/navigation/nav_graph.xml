@@ -6,7 +6,7 @@
     app:startDestination="@id/firstFragment">
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.oguzdogdu.navigation.FirstFragment"
+        android:name="com.oguzdogdu.navigation.ui.firstfragment.FirstFragment"
         android:label="First"
         tools:layout="@layout/fragment_first" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.oguzdogdu.navigation.SecondFragment"
+        android:name="com.oguzdogdu.navigation.ui.secondfragment.SecondFragment"
         android:label="Second"
         tools:layout="@layout/fragment_second" >
         <argument
