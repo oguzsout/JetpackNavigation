@@ -9,9 +9,14 @@
         android:name="com.oguzdogdu.navigation.ui.firstfragment.FirstFragment"
         android:label="First"
         tools:layout="@layout/fragment_first" >
+
         <action
             android:id="@+id/action_firstFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
+            app:destination="@id/secondFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
     </fragment>
     <fragment
@@ -19,11 +24,17 @@
         android:name="com.oguzdogdu.navigation.ui.secondfragment.SecondFragment"
         android:label="Second"
         tools:layout="@layout/fragment_second" >
+
         <argument
         android:name="users"
         app:argType="com.oguzdogdu.navigation.model.User" />
+
         <action
             android:id="@+id/action_secondFragment_to_firstFragment"
-            app:destination="@id/firstFragment" />
+            app:destination="@id/firstFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 </navigation>
